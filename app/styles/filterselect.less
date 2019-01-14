@@ -1,0 +1,124 @@
+#app-modal-root,
+.app-window {
+  .filter-select {
+    display: flex;
+    align-items: center;
+
+    &.add-select {
+      .Select-option {
+        padding: 0 10px;
+      }
+      .Select-menu {
+        .add-address-link {
+          background-color: #2b98bb;
+          padding: 0px 10px;
+          text-align: center;
+
+          a {
+            color: #fff;
+            text-transform: uppercase;
+            outline: none;
+            font-weight: 600;
+    		font-size: 14px;
+          }
+        }
+      }
+
+      .Select-menu-outer {
+        width: auto;
+      }
+    }
+
+    .select-label {
+      font-size: 14px;
+    }
+
+    .Select-clear-zone {
+      display: none;
+    }
+
+    .Select-control {
+      background: transparent;
+      border: none;
+      box-shadow: none;
+    }
+
+    .is-focused:not(.is-open) > .Select-control {
+      border: transparent;
+      box-shadow: none;
+    }
+
+    .is-open > .Select-control {
+      background-color: transparent;
+    }
+
+    .has-value.is-clearable.Select--single > .Select-control .Select-value {
+      padding-right: 10px;
+    }
+
+    .Select-control {
+      border: none;
+      background-color: transparent;
+      outline: none;
+      height: auto;
+      overflow: auto;
+    }
+
+    .Select-control:hover {
+      box-shadow: none;
+    }
+
+    .Select-menu-outer {
+      width: 170px;
+      right: 0;
+    }
+
+    .Select-menu-outer, .Select-option {
+      border: 1px solid #FAFAFA;
+      max-height: 100%;
+    }
+
+    .Select-menu {
+      max-height: 100%;
+    }
+
+    .Select-input {
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, 50%);
+    }
+
+    .Select-input > input {
+      color: transparent;
+    }
+
+    .Select-placeholder {
+      padding: 0;
+    }
+
+    .Select-value {
+      position: relative;
+    }
+
+    .Select-option {
+      font-size: 14px;
+      background-color: #E6EBF1;
+
+      &.is-focused, &.is-selected {
+        background-color: #fff;
+      }
+
+      &.is-disabled {
+        color: #949494;
+      }
+    }
+
+    .Select-value-label {
+      cursor: pointer;
+      font-size: 14px;
+      float: right;
+      padding-right: 0;
+    }
+  }
+}
